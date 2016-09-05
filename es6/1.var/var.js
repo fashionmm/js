@@ -1,8 +1,15 @@
+"use strict";
 /**
  *
  */
-if(true)
-{
-    var a="a";
+if (true) {
+    let url = "www.softwhy.com";
+    console.log(url);
+    const  b="nihao";
+
+    console.log(b);
 }
-console.log(a);
+
+
+
+
