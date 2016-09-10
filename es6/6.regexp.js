@@ -55,3 +55,14 @@ console.log("a1bbbc".replace(/\w(?!\d)/g,"x"));// 意思是匹配任意字符，
 
 // 11. 字符串方法
 //  search()   match()  split()  replace()
+
+// 数字改成汉字大写
+var str="2016";
+var arr=["零","壹","贰","叁","肆","伍","陆","柒","捌","玖"]
+
+var str1= str.replace(/\d/gi,function(){//参数 顺序 match  group1,...,index
+    "use strict";
+    return arr[arguments[0]];//arguments[0] 获取到匹配的字符。2,1，0，6
+});
+
+console.log(str1);
